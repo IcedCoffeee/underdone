@@ -50,7 +50,7 @@ AddDrop(NPC, "quest_zombieblood", 75)
 AddMultiplier(NPC, 11, 3)
 NPC.DeathDistance = 14
 NPC.Resistance = "Fire"
-NPC.Color = {200,0,0,255} 
+NPC.Color = {Color(200,0,0,255)} 
 function NPC:DamageCallBack(npc, victim)
 	local intChance = 8 
 	local intTime = 7
@@ -72,7 +72,7 @@ AddDrop(NPC, "quest_zombieblood", 75)
 AddMultiplier(NPC, 11, 3)
 NPC.DeathDistance = 14
 NPC.Resistance = "Ice"
-NPC.Color = {0,0,200,255} 
+NPC.Color = {Color(0,0,200,255)} 
 function NPC:DamageCallBack(npc, victim)
 	intChance = 8
 	if  math.random(1, 100 / intChance) == 1 then
